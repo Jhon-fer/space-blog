@@ -1,0 +1,72 @@
+.gallery {
+  padding: 100px 0;
+  width: 100%;
+  height: auto;
+}
+.gallery__card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 90%;
+  transition: all .5s;
+  border: 1px solid rgba(0, 0, 0);
+}
+.gallery__card--title {
+  padding: 30px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.gallery__card--image {
+  padding: 0 0 20px 0;
+  max-height: 300px;
+  height: 300px;
+}
+.gallery__card--paragraph {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  text-align: justify;
+  color: #fff;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
+  cursor: pointer; */
+}
+/* .gallery__card--paragraph:hover {
+  display: block;
+} */
+
+/********************************MEDIA QUERIES********************************/
+/*********TABLET SCREEN********/
+@media (min-width: 768px) {
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 768px;
+    width: 90%;
+  }
+  .gallery__card {
+    padding: 20px;
+    max-width: 50%;
+  }
+}
+/*********DESKTOP SCREEN********/
+@media (min-width: 1024px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1024px;
+  }
+  .gallery__card {
+    padding: 20px;
+    max-width: 50%;
+  }
+
+}
